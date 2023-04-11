@@ -5,10 +5,10 @@
   "description": "federation test",
   "main": "index.js",
   "scripts": {
-    "start-gateway": "nodemon gateway.js",
-    "start-service-user": "nodemon user.js",
-    "start-service-product": "nodemon product.js",
-    "start-service-cart": "nodemon cart.js",
+    "start-gateway": "nodemon ./service/index.js",
+    "start-service-user": "nodemon ./service/user.js",
+    "start-service-product": "nodemon ./service/product.js",
+    "start-service-cart": "nodemon ./service/cart.js",
     "start-services": "concurrently \"npm:start-service-*\""
   },
   "author": "",
